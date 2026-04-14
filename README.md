@@ -1,57 +1,49 @@
-# Causal Inference for The Brave and True
+# Inferenza Causale per i Coraggiosi e i Veri
 
 ![img](./causal-inference-for-the-brave-and-true/data/img/brave-and-true.png)
 
 [![DOI](https://zenodo.org/badge/255903310.svg)](https://zenodo.org/badge/latestdoi/255903310)
 
-A light-hearted yet rigorous approach to learning impact estimation and sensitivity analysis. All in Python and with as many memes as I could find.
+Un approccio leggero ma rigoroso per apprendere la stima dell'impatto e l'analisi di sensibilità. Tutto in Python e con tutti i meme che sono riuscito a trovare.
 
-[Check out the book here!](https://matheusfacure.github.io/python-causality-handbook/landing-page.html)
+[Dai un'occhiata al libro qui!](https://matheusfacure.github.io/python-causality-handbook/landing-page.html)
 
-If you want to read the book in Brazilian Portuguese, @rdemarqui made this awesome translation:  
+Se vuoi leggere il libro in portoghese brasiliano, @rdemarqui ha realizzato questa fantastica traduzione:  
 [Inferência Causal para os Corajosos e Verdadeiros](https://github.com/rdemarqui/python-causality-handbook-ptbr)
 
-If you want to read the book in French, Arthur Mello put a lot of effort into this beautiful translation:  
+Se vuoi leggere il libro in francese, Arthur Mello ha dedicato molto impegno a questa bellissima traduzione:  
 [L'Inférence Causale pour les Courageux et les Vrais](https://github.com/arthurmello/python-causality-handbook)
 
-If you want to read the book in Chinese, @xieliaing was very kind to make a translation (Chapters 1-21):  
+Se vuoi leggere il libro in cinese, @xieliaing è stato molto gentile a realizzare una traduzione (Capitoli 1-21):  
 [因果推断：从概念到实践](https://github.com/xieliaing/CausalInferenceIntro)
 
-There is also a more recent Chinese tralsation by 黄文喆（Wenzhe Huang) and 许文立（Wenli Xu) (All Chapters):  
+C'è anche una traduzione cinese più recente di 黄文喆 (Wenzhe Huang) e 许文立 (Wenli Xu) (Tutti i capitoli):  
 [因果推断：献给求真敢为者](https://github.com/Wenzhe-Huang/python-causality-handbook-zh)
 
-If you want to read the book in Spanish, @donelianc was very kind to make a translation:  
+Se vuoi leggere il libro in spagnolo, @donelianc è stata molto gentile a realizzare una traduzione:  
 [Inferencia Causal para los Valientes y Verdaderos](https://github.com/donelianc/introduccion-inferencia-causal)
 
-If you want to read it in Korean, @jsshin2019 has put up a team to make the that translation possible:  
+Se vuoi leggerlo in coreano, @jsshin2019 ha messo su un team per rendere possibile quella traduzione:  
 [Python으로 하는 인과추론 : 개념부터 실습까지](https://github.com/TeamCausality/Causal-Inference-with-Python)
 
-Also, some really kind folks (@vietecon, @dinhtrang24 and @anhpham52) also translated this content into Vietnamese:  
+Inoltre, alcune persone molto gentili (@vietecon, @dinhtrang24 e @anhpham52) hanno tradotto questo contenuto in vietnamita:  
 [Nhân quả Python](https://github.com/vietecon/NhanQuaPython)
 
-
-
-
-
-
-I like to think of this entire series as a tribute to Joshua Angrist, Alberto Abadie and Christopher Walters for their amazing Econometrics class. Most of the ideas here are taken from their classes at the American Economic Association. Watching them is what is keeping me sane during this tough year of 2020.
+Mi piace pensare a tutta questa serie come a un tributo a Joshua Angrist, Alberto Abadie e Christopher Walters per la loro fantastica classe di Econometria. La maggior parte delle idee qui sono tratte dalle loro lezioni presso l'American Economic Association. Guardarle è ciò che mi ha mantenuto sano di mente durante questo difficile anno 2020.
 * [Cross-Section Econometrics](https://www.aeaweb.org/conference/cont-ed/2017-webcasts)
 * [Mastering Mostly Harmless Econometrics](https://www.aeaweb.org/conference/cont-ed/2020-webcasts)
 
-I'd also like to reference the amazing books from Angrist. They have shown me that Econometrics, or 'Metrics as they call it, is not only extremely useful but also profoundly fun.
+Vorrei anche fare riferimento ai fantastici libri di Angrist. Mi hanno dimostrato che l'Econometria, o 'Metrics come la chiamano loro, non è solo estremamente utile ma anche profondamente divertente.
 
 * [Mostly Harmless Econometrics](https://www.mostlyharmlesseconometrics.com/)
 * [Mastering 'Metrics](https://www.masteringmetrics.com/)
 
-Finally, I'd like to reference Miguel Hernan and Jamie Robins' book. It has been my trustworthy companion in the most thorny causal inference questions I've had to answer.
+Infine, vorrei fare riferimento al libro di Miguel Hernan e Jamie Robins. È stato il mio fidato compagno nelle questioni di inferenza causale più spinose a cui ho dovuto rispondere.
 
 * [Causal Inference Book](https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/)
 
-## How to Support This Work
+## Come Sostenere Questo Lavoro
 
-Causal Inference for the Brave and True is an open-source resource primarily focused on econometrics and the statistics of science. It exclusively utilizes free software, grounded in Python. The primary objective is to ensure accessibility, not only from a financial standpoint but also from an intellectual perspective. I've tried my best to keep the content entertaining while maintaining the necessary scientific rigor.
+Causal Inference for the Brave and True è una risorsa open-source focalizzata principalmente sull'econometria e sulla statistica della scienza. Utilizza esclusivamente software libero, basato su Python. L'obiettivo principale è garantire l'accessibilità, non solo dal punto di vista finanziario ma anche da quello intellettuale. Ho fatto del mio meglio per mantenere il contenuto divertente pur mantenendo il necessario rigore scientifico.
 
-
-If you want to show your appreciation for this work, consider  going to https://www.patreon.com/causal_inference_for_the_brave_and_true. Alternatively, you can purchase my book, [Causal Inference in Python](https://www.amazon.com/Causal-Inference-Python-Applying-Industry/dp/1098140257), which provides more insights into applying causal inference in the industry.
-
-
+Se vuoi mostrare il tuo apprezzamento per questo lavoro, considera di visitare https://www.patreon.com/causal_inference_for_the_brave_and_true. In alternativa, puoi acquistare il mio libro, [Causal Inference in Python](https://www.amazon.com/Causal-Inference-Python-Applying-Industry/dp/1098140257), che fornisce ulteriori approfondimenti sull'applicazione dell'inferenza causale nell'industria.

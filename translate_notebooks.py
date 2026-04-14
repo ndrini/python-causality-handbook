@@ -53,7 +53,7 @@ Output ONLY the translated text, nothing else."""
 
     try:
         response = client.messages.create(
-            model="claude-opus-4-6",
+            model="claude-3-5-sonnet-20240620",
             max_tokens=4096,
             system=system_prompt,
             messages=conversation_history
@@ -96,7 +96,8 @@ def process_notebook(nb_path, dry_run=False):
         if cell['cell_type'] == 'markdown':
             english_text = extract_markdown_text(cell)
 
-            if english_text and len(english_text.strip()) > 50:  # Solo celle significative
+            # Evita di ri-tradurre celle già tradotte o troppo corte
+            if english_text and len(english_text.strip()) > 50 and "---" not in english_text:
                 print(f"  Cella {i}: traduzione in corso...", end=" ", flush=True)
 
                 italian_text, conversation_history = translate_text(
@@ -125,7 +126,7 @@ def process_notebook(nb_path, dry_run=False):
     if not dry_run:
         nb['cells'] = new_cells
         with open(nb_path, 'w', encoding='utf-8') as f:
-            json.dump(nb, f, ensure_ascii=False, indent=1)
+            json.dump(nb, f, ensure_ascii=False, indent=2)
         print(f"  ✓ Salvato! ({len(nb['cells'])} celle totali, {translated_count} tradotte)")
     else:
         print(f"  [DRY RUN] Sarebbero {translated_count} celle tradotte")
@@ -133,7 +134,9 @@ def process_notebook(nb_path, dry_run=False):
     return translated_count
 
 def main():
-    notebooks_dir = Path('/mnt/condivisa/workspace/python-causality-handbook/causal-inference-for-the-brave-and-true')
+    # Usa percorsi relativi basati sulla posizione dello script per maggiore portabilità
+    script_dir = Path(__file__).parent
+    notebooks_dir = script_dir / 'causal-inference-for-the-brave-and-true'
 
     # Notebook da tradurre (03-25)
     notebooks = sorted([f for f in notebooks_dir.glob('*.ipynb')])
